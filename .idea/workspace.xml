@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0aa24c-ba2e-4aff-a7de-0d093e450de1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/fonts/fontello.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/imgs/logo.svg" afterPath="$PROJECT_DIR$/src/assets/images/logo.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/App.js" afterPath="$PROJECT_DIR$/src/containers/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,11 +31,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="400">
                   <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/containers/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="40">
+                  <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -94,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/containers/App.js" />
       </list>
     </option>
   </component>
@@ -144,6 +158,36 @@
               <item name="www.amirrajabi.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="www.amirrajabi.com" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="www.amirrajabi.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.amirrajabi.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.amirrajabi.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.amirrajabi.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.amirrajabi.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.amirrajabi.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.amirrajabi.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.amirrajabi.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.amirrajabi.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.amirrajabi.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -165,11 +209,11 @@
       <recent name="C:\PurpleBricks\Test\www.amirrajabi.com\src\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PurpleBricks\Test\www.amirrajabi.com\src\assets\fonts" />
+      <recent name="C:\PurpleBricks\Test\www.amirrajabi.com\src\containers" />
       <recent name="C:\PurpleBricks\Test\www.amirrajabi.com\src\assets\imgs" />
       <recent name="C:\PurpleBricks\Test\www.amirrajabi.com\src\assets" />
       <recent name="C:\PurpleBricks\Test\www.amirrajabi.com\src\actions" />
-      <recent name="C:\PurpleBricks\Test\www.amirrajabi.com\src\components" />
-      <recent name="C:\PurpleBricks\Test\www.amirrajabi.com\src\style" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,12 +238,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501211863348</updated>
-      <workItem from="1501211864933" duration="7240000" />
+      <workItem from="1501211864933" duration="8063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7240000" />
+    <option name="totallyTimeSpent" value="8063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="2" width="3866" height="2096" extended-state="0" />
@@ -249,16 +293,6 @@
         <state relative-caret-position="80">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -357,6 +391,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
           <folding />
         </state>
       </provider>

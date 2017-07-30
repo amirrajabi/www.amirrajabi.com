@@ -1,0 +1,114 @@
+// Vars
+$black: #000;
+$hamburger-bar-width: 27px;
+$hamburger-bar-thickness: 1px;
+$hamburger-bar-spacing: 6px;
+$hamburger-bar-padding: 30px;
+
+.hamburger-icon {
+  position: absolute;
+  width: $hamburger-bar-width;
+  height: $hamburger-bar-width;
+  z-index: 12;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+
+  .bar-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    .bar {
+      width: $hamburger-bar-width;
+      height: $hamburger-bar-thickness;
+      background-color: $black;
+      border-radius: 2px;
+      margin: auto;
+      top: 50%;
+      right: 0;
+      position: absolute;
+      transform-origin: 50% 50%;
+      transform: translateX(0) translateY(0);
+
+      transition: all 0.25s;
+      transition-timing-function: ease-out;
+
+      &:nth-child(1) {
+        margin-top: -$hamburger-bar-spacing - $hamburger-bar-thickness;
+        animation: runHamburgerTopBar 0.75s 0.2s;
+        animation-timing-function: ease-out;
+      }
+
+      &:nth-child(3) {
+        margin-top: $hamburger-bar-spacing + $hamburger-bar-thickness;
+        animation: runHamburgerBottomBar 0.75s 0.2s;
+        animation-timing-function: ease-out;
+      }
+    }
+  }
+
+  &--close{
+    &:hover{
+      .bar-wrapper {
+        .bar {
+          &:nth-child(1) {
+            width: $hamburger-bar-width * 0.5;
+          }
+          &:nth-child(2) {
+            width: $hamburger-bar-width * 0.75;
+          }
+        }
+      }
+    }
+  }
+
+  &--open{
+    .bar-wrapper {
+      .bar {
+        &:nth-child(1) {
+          width: $hamburger-bar-width;
+          margin-top: 0;
+          animation: crossHamburgerTopBar 0.5s 0.2s forwards;
+          animation-timing-function: ease-out;
+        }
+        &:nth-child(2) {
+          width: 0;
+        }
+        &:nth-child(3) {
+          margin-top: 0;
+          animation: crossHamburgerBottomBar 0.5s 0.2s forwards;
+          animation-timing-function: ease-out;
+        }
+      }
+    }
+  }
+}
+
+@keyframes runHamburgerTopBar {
+  0% { transform: rotate(-4deg); }
+  25% { transform: rotate(4deg); }
+  50% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes runHamburgerBottomBar {
+  0% { transform: rotate(4deg); }
+  25% { transform: rotate(-4deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes crossHamburgerTopBar {
+  0%   { transform: rotate(0deg); }
+  25% { transform: rotate(-55deg); }
+  50% { transform: rotate(-40deg); }
+  100% { transform: rotate(-45deg); }
+}
+
+@keyframes crossHamburgerBottomBar {
+  0%   { transform: rotate(0deg); }
+  25% { transform: rotate(50deg); }
+  50% { transform: rotate(40deg); }
+  100% { transform: rotate(45deg); }
+}

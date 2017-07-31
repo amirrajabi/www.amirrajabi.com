@@ -1,0 +1,1 @@
+export const MAIN_MENU_STATUS = 'MAIN_MENU_STATUS';

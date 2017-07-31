@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import MainMenu from '../components/menu/MainMenu';
+import MainMenu from '../components/mainMenu/MainMenu';
 
 import '../styles/App.css';
 

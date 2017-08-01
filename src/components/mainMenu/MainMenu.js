@@ -7,6 +7,9 @@ import { bindActionCreators } from 'redux'
 import {connect} from 'react-redux';
 import * as mainMenuActions from '../../actions/mainMenuActions';
 import Burger from './Burger';
+import MenuItems from './MenuItems';
+
+import './styles/_menu-items.css';
 
 class MainMenu extends Component {
 
@@ -36,7 +39,8 @@ class MainMenu extends Component {
         return (
             <div>
                 <Burger burgerClick={this.burgerClick}/>
-                <p>{this.props.status.toString()}</p>
+                <MenuItems items={this.props.menuItems}
+                           showing={this.props.status}/>
             </div>
         )
     }
@@ -44,18 +48,20 @@ class MainMenu extends Component {
 }
 
 MainMenu.propTypes = {
-    actions: PropTypes.object.isRequired
+    actions: PropTypes.object.isRequired,
+    menuItems: PropTypes.array.isRequired,
+    status: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
     return {
-        status: state.mainMenu.status
+        status: state.mainMenu.status,
+        menuItems: state.mainMenu.items
     }
 }
 
 function mapDispatchToProps( dispatch ) {
     return {
-        // mainMenuStatus: status => dispatch(mainMenuActions.mainMenuStatus(status))
         actions: bindActionCreators(mainMenuActions, dispatch)
     }
 }

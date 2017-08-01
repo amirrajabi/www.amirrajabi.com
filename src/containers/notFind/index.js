@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Contact = () => {
+const NotFind = () => {
 
     return (
         <div>
-            Contact Buddy!
+            Not Find Page 404
         </div>
     )
 
 };
 
-export default Contact;
+export default NotFind;

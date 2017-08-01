@@ -4,7 +4,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './styles/_burger.css';
+import './styles/burger.css';
 
 const Burger = ({ burgerClick }) => {
   return (

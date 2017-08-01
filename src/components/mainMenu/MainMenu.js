@@ -9,8 +9,6 @@ import * as mainMenuActions from '../../actions/mainMenuActions';
 import Burger from './Burger';
 import MenuItems from './MenuItems';
 
-import './styles/_menu-items.css';
-
 class MainMenu extends Component {
 
     constructor(props, context) {

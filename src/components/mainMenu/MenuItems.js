@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+
+import './styles/menu-items.css';
 
 const MenuItems = ( { items, showing } ) => {
     return (
@@ -7,7 +10,9 @@ const MenuItems = ( { items, showing } ) => {
             {items.map((item, index) => {
                 return (
                     <p key={index}>
-                        <a href="amirrajabi.com">{item.title}</a>
+                        <Link to={item.id}>
+                            {item.title}
+                        </Link>
                     </p>
                 )
             })}

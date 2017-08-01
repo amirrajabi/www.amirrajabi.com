@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Contact = () => {
+const Skills = () => {
 
     return (
         <div>
-            Contact Buddy!
+            Skills Buddy!
         </div>
     )
 
 };
 
-export default Contact;
+export default Skills;

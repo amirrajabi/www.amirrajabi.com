@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import mainMenu from './mainMenuReducers';
+import portfolio from './portfolioReducers';
 
 const rootReducer = combineReducers({
-    mainMenu
+    mainMenu,
+    portfolio
 });
 
 export default rootReducer;

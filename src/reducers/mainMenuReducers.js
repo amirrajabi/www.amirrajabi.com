@@ -20,12 +20,6 @@ export default function mainMenuReducers(state = initialState, action) {
                     items: action.items
                 }
             );
-        // case 'MAIN_MENU_STATUS':
-        //     debugger;
-        //     return [
-        //         ...state,
-        //         Object.assign({}, !action.mainMenuStatus)
-        //     ];
         default:
             return state;
     }

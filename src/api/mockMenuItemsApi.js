@@ -2,23 +2,23 @@ import delay from './delay';
 
 const items = [
     {
-        id: 'home',
+        id: '/',
         title: 'Home',
     },
     {
-        id: 'portfolio',
+        id: '/portfolio',
         title: 'Portfolio',
     },
     {
-        id: 'skills',
+        id: '/skills',
         title: 'Skills',
     },
     {
-        id: 'about',
+        id: '/about',
         title: 'About',
     },
     {
-        id: 'contact',
+        id: '/contact',
         title: 'Contact',
     }
 ];

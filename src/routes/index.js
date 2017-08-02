@@ -1,5 +1,6 @@
 import Home from '../containers/home';
 import Portfolio from '../containers/portfolio';
+import PortfolioDetails from '../containers/portfolio/portfolioDetails';
 import Skills from '../containers/skills';
 import About from '../containers/about';
 import Contact from '../containers/contact';
@@ -11,12 +12,12 @@ export default [
         component: Home
     },
     {
-        path: '/home',
-        component: Home
-    },
-    {
         path: '/portfolio',
         component: Portfolio
+    },
+    {
+        path: '/portfolio/:id',
+        component: PortfolioDetails
     },
     {
         path: '/skills',

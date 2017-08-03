@@ -9,21 +9,23 @@ class Portfolio extends Component {
 
     constructor(props, context) {
         super(props, context);
-        this.state = {}
+        this.state = {};
     }
 
     render() {
         return (
             <div>
                 <p>portfolio Buddy!</p>
-                {this.props.portfolioItems.map((item, index) => {
-                    return (
-                        <Link key={index}
-                              to={`/portfolio/${item.id}`}>
-                            <p>{item.name}</p>
-                        </Link>
-                    )
-                })}
+                { this.props.portfolioItems !== undefined &&
+                    this.props.portfolioItems.map((item, index) => {
+                        return (
+                            <Link key={index}
+                                  to={`/portfolio/${item.id}`}>
+                                {item.name}
+                            </Link>
+                        )
+                    })
+                }
             </div>
         )
     }
@@ -31,10 +33,10 @@ class Portfolio extends Component {
 
 Portfolio.propTypes = {
     actions: PropTypes.object.isRequired,
-    portfolioItems: PropTypes.array.isRequired
+    portfolioItems: PropTypes.array
 };
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state) {
     return {
         portfolioItems: state.portfolio.items
     }

@@ -8,7 +8,7 @@ import { loadMenuItems } from './actions/mainMenuActions';
 import { loadPortfolios } from './actions/portfolioActions';
 import registerServiceWorker from './registerServiceWorker';
 
-import './containers/styles/index.css';
+import './styles/index.css';
 
 const store = configureStore();
 store.dispatch(loadMenuItems());

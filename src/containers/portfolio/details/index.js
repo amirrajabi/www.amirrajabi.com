@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import * as portfolioActions from '../../actions/portfolioActions';
+import * as portfolioActions from '../../../actions/portfolioActions';
 
 class PortfolioDetails extends Component {
 
@@ -28,7 +28,7 @@ PortfolioDetails.propTypes = {
 };
 
 function getPortfolioById(portfolio, id) {
-    const item = portfolio.filter( item => item.id === id);
+    const item = portfolio.filter( item => item.id === id); //return current item's data
     if(item) return item[0];
     return null;
 }

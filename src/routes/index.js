@@ -1,6 +1,6 @@
 import Home from '../containers/home';
 import Portfolio from '../containers/portfolio';
-import PortfolioDetails from '../containers/portfolio/portfolioDetails';
+import PortfolioDetails from '../containers/portfolio/details';
 import Skills from '../containers/skills';
 import About from '../containers/about';
 import Contact from '../containers/contact';

@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
+// import { TransitionSwitch } from './TransitionSwitch';
+// import {CSSTransitionGroup} from 'react-transition-group';
+
 import RouteList from '../routes';
 import MainMenu from '../components/mainMenu/MainMenu';
 
@@ -16,15 +19,22 @@ class App extends Component {
         return (
             <div className="app">
                 <MainMenu/>
-                <Switch>
-                    {RouteList.map((route, index) => {
-                        return (
-                            <Route exact={true}
-                                   key={index}
-                                   {...route}/>
-                        )
-                    })}
-                </Switch>
+                {/*<CSSTransitionGroup*/}
+                    {/*transitionName="example"*/}
+                    {/*transitionEnterTimeout={500}*/}
+                    {/*transitionLeaveTimeout={300}>*/}
+                    {/*<TransitionSwitch parallel={false}>*/}
+                    <Switch>
+                        {RouteList.map((route, index) => {
+                            return (
+                                <Route exact={true}
+                                       key={index}
+                                       {...route}/>
+                            )
+                        })}
+                    </Switch>
+                    {/*</TransitionSwitch>*/}
+                {/*</CSSTransitionGroup>*/}
             </div>
         );
     }

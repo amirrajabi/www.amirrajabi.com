@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import {Route, Switch} from 'react-router-dom';
-
-import RouteList from '../routes';
+import { TweenMax } from 'greensock';
+import Pages from './Pages';
 import MainMenu from '../components/mainMenu/MainMenu';
-
+import Background from '../components/common/background/background'
 import '../styles/app.css';
 
 class App extends Component {
@@ -13,19 +12,23 @@ class App extends Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        TweenMax.to(this.refs.somy, 5, {x:500, y:500});
+        // setTimeout(() => {
+        //
+        //     console.log(this.refs.point);
+        // }, 5000);
+        // let node= this.findDOMNode();
+        // console.log(this);
+    }
+
     render() {
         return (
             <div className="app">
+                <div ref="somy" className="somy"></div>
                 <MainMenu/>
-                <Switch>
-                    {RouteList.map((route, index) => {
-                        return (
-                            <Route exact={true}
-                                   key={index}
-                                   {...route}/>
-                        )
-                    })}
-                </Switch>
+                <Pages/>
+                <Background/>
             </div>
         );
     }
